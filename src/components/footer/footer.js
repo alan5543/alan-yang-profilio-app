@@ -9,7 +9,7 @@ function Copyright(props) {
   return (
     <Typography variant="h6" className='copyrightText' align="center"  {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="/" >
+      <Link color="inherit" href="/alan-yang-profilio-app" >
         Alan Yang's Website
       </Link>{' '}
       {new Date().getFullYear()}
