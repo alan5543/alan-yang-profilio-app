@@ -8,6 +8,7 @@ import Skills from '../components/skills/skills';
 import Experience from '../components/experience/experience';
 import Project from '../components/project/project';
 import Footer from '../components/footer/footer';
+import "./app.css";
 // import Contact from '../components/contactMe/contact';
 
 const theme = createTheme({
@@ -34,7 +35,7 @@ const App = () => {
   }
 
   return (
-    <>
+    <div className='background'>
       <ThemeProvider theme={theme}>
         <Navbar toggleMoblieTab={toggleMoblieTab} />
         <SideBar isMoblieTabOpen={isMoblieTabOpen} toggleMoblieTab={toggleMoblieTab} />
@@ -46,7 +47,7 @@ const App = () => {
         {/* <Contact/> */}
         <Footer/>
       </ThemeProvider>
-    </>
+    </div>
   )
 }
 
