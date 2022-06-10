@@ -1,0 +1,42 @@
+.projCardContent{
+    height: 15rem;
+}
+
+.projectTitle{
+    margin: 0%;
+    padding: 0 0 3rem 0;
+    text-align: center;
+}
+
+.projectTitleName{
+    color: #DCD427;
+    text-transform: uppercase;
+	font-size: 3.5rem;
+    margin: 0;
+}
+
+.projectSubtitleName{
+    color: #969696;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.projCardContainer{
+    max-width: 360px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .projectTitleName{
+        color: #DCD427;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .projCardContainer{
+        max-width: 100%
+    }
+}

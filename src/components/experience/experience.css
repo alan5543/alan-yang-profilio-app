@@ -1,0 +1,73 @@
+.experienceContainer{
+    background-color: #140c14;
+}
+
+.experienceTitleContainer{
+    padding: 1rem 0 0 0;
+    margin: 0;
+    text-align: center;
+}
+
+.experienceContainerTitleName{
+    color: #DCD427;
+    text-transform: uppercase;
+	font-size: 3.5rem;
+    margin: 0;
+}
+
+.experienceContainerSubtitleName{
+    color: #969696;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+
+.experienceItemTitle{
+    font-size: 1.5rem;
+    padding-bottom: 1vh;
+}
+
+.experienceItemSubtitle{
+    font-size: 1.2rem;
+    padding-bottom: 1vh;
+    color: #676767;
+}
+
+.experienceItemContent{
+    font-size: 1rem;
+    padding-bottom: 1vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* .experienceItemSkills{
+
+}
+ */
+
+
+@media screen and (min-width: 1600px) {
+    .experienceItemContainer{
+        width: 50vw;
+    }
+
+    .timelineContainer{
+        justify-content: center;
+        padding: 0 10vw 0 0;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .experienceContainer{
+        background-color: #140c14;
+        padding: 8rem 0 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .experienceContainerTitleName{
+        color: #DCD427;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+}

@@ -1,0 +1,19 @@
+[
+    {
+        "degree": "Bachelor Degree",
+        "school": "City University of Hong Kong",
+        "start": "2018",
+        "end": "2022",
+        "title": "Bachelor in Electrical Engineering",
+        "major": "Major in Information Engineering",
+        "gpa": "3.77",
+        "honour": "First Class Honours",
+        "certification": [
+            "Awarded with Deans' List in 2019/20 Semester A",
+            "Awarded with Deans' List in 2019/20 Semester B",
+            "Awarded with Deans' List in 2020/21 Semester B ",
+            "HKSAR Government Scholarship on Outstanding Performance 2020/21",
+            "HK & Kowloon Electrical Appliances Merchants Association Ltd. Scholarship 2020/21"
+        ]
+    }
+]

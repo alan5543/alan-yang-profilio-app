@@ -1,0 +1,16 @@
+.socialIcon{
+    color:#969696;
+	font-size: 3rem;
+	padding:0px 10px;
+}
+
+.socialIcon:hover{
+    color:#3d3d3d;
+}
+
+.socialIconContainer{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 1rem;
+}

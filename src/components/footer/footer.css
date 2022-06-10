@@ -1,0 +1,13 @@
+.footerContainer{
+    background-color: #140c14;
+    height: 100%;
+    width: 100%;
+}
+
+
+.copyright{
+    color: #969696;
+    margin: 0;
+    padding: 1.5rem 0 4rem 0;
+    font-size: 1.2rem;
+}
