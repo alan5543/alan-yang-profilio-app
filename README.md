@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Alan Yang Profilio React Website
+This website is using React and Material UI to have a showcase about Alan Yang Personal Profile. 
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
