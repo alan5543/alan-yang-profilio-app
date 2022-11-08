@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alan-yang-profilio-app/static/css/main.f7fc35b3.css",
-    "main.js": "/alan-yang-profilio-app/static/js/main.0af7a5e1.js",
+    "main.css": "/alan-yang-profilio-app/static/css/main.059b969b.css",
+    "main.js": "/alan-yang-profilio-app/static/js/main.36255ddc.js",
     "static/media/homeVideo.mp4": "/alan-yang-profilio-app/static/media/homeVideo.567d68183de2a40f5d42.mp4",
     "static/media/smart_retail_app.png": "/alan-yang-profilio-app/static/media/smart_retail_app.cf47aa62d861f1027734.png",
     "static/media/person.jpg": "/alan-yang-profilio-app/static/media/person.9871a77523218d4524c9.jpg",
@@ -9,10 +9,10 @@
     "static/media/news_app.png": "/alan-yang-profilio-app/static/media/news_app.547ac80f14f0e27bb954.png",
     "static/media/logistic_app.jpg": "/alan-yang-profilio-app/static/media/logistic_app.c3c18301b2445cad0e52.jpg",
     "static/media/profilo_app.png": "/alan-yang-profilio-app/static/media/profilo_app.bf6f122b664278f9e669.png",
-    "static/media/CV_Yang_Kai_Yam.pdf": "/alan-yang-profilio-app/static/media/CV_Yang_Kai_Yam.7d1734e885f117aa43ff.pdf",
     "static/media/EQ_Cal_App.png": "/alan-yang-profilio-app/static/media/EQ_Cal_App.71d9b8ff87165796de70.png",
     "static/media/machine_learning_icon.png": "/alan-yang-profilio-app/static/media/machine_learning_icon.5ab601072be8eaa0d03b.png",
     "static/media/data-icon.png": "/alan-yang-profilio-app/static/media/data-icon.85db75b56c062aeeef42.png",
+    "static/media/ALAN_YANG_CV.pdf": "/alan-yang-profilio-app/static/media/ALAN_YANG_CV.bb9de1b90b94cb4479eb.pdf",
     "static/media/others-icon.png": "/alan-yang-profilio-app/static/media/others-icon.de355b546a675db80f64.png",
     "static/media/frontend_icon.png": "/alan-yang-profilio-app/static/media/frontend_icon.f805de69aeed93de7026.png",
     "static/media/backend_icon.png": "/alan-yang-profilio-app/static/media/backend_icon.50bcd94e9a06015bfd4c.png",
@@ -22,11 +22,11 @@
     "static/media/slick.ttf": "/alan-yang-profilio-app/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/alan-yang-profilio-app/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/alan-yang-profilio-app/index.html",
-    "main.f7fc35b3.css.map": "/alan-yang-profilio-app/static/css/main.f7fc35b3.css.map",
-    "main.0af7a5e1.js.map": "/alan-yang-profilio-app/static/js/main.0af7a5e1.js.map"
+    "main.059b969b.css.map": "/alan-yang-profilio-app/static/css/main.059b969b.css.map",
+    "main.36255ddc.js.map": "/alan-yang-profilio-app/static/js/main.36255ddc.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7fc35b3.css",
-    "static/js/main.0af7a5e1.js"
+    "static/css/main.059b969b.css",
+    "static/js/main.36255ddc.js"
   ]
 }
