@@ -19,7 +19,8 @@ export const personalData = [
                     "Java",
                     "Python",
                     "C++",
-                    "HTML/CSS"
+                    "HTML/CSS",
+                    "Kotlin"
                 ]
             },
             {
@@ -30,7 +31,8 @@ export const personalData = [
                     "Angular",
                     "React",
                     "Next.js",
-                    "Ionic Framework"
+                    "Ionic Framework",
+                    "Android Development"
                 ]
             },
             {
@@ -42,7 +44,8 @@ export const personalData = [
                     "Express.js",
                     "Node.js",
                     "RESTful API",
-                    "Postman"
+                    "Postman",
+                    "Clean Architecture"
                 ]
             },
             {
@@ -52,7 +55,8 @@ export const personalData = [
                 "elements": [
                     "MySQL",
                     "MongoDB",
-                    "SQLite"
+                    "SQLite",
+                    "Firebase"
                 ]
             },
             {
@@ -77,7 +81,9 @@ export const personalData = [
                     "Arduino",
                     "Docker",
                     "Tweepy",
-                    "BeautifulSoup"
+                    "BeautifulSoup",
+                    "Jira",
+                    "Agile"
                 ]
             }
         ]

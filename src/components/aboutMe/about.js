@@ -4,7 +4,7 @@ import Person from "../../images/person.jpg";
 import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { personalData } from '../../data/personal'
 import { Button } from "@mui/material";
-import Resume from "../../documents/CV_Yang_Kai_Yam.pdf"
+import Resume from "../../documents/ALAN_YANG_CV.pdf"
 
 const About = () => {
 

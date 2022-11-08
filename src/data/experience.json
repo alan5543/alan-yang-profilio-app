@@ -1,19 +1,22 @@
 [
     {
         "key": "001",
-        "company": "City University of Hong Kong",
-        "position": "Major in Information Engineering",
-        "date": "Sep 2018 - Present",
-        "isWork": false,
+        "company": "Lalamove",
+        "position": "Software Engineer, Mobile",
+        "date": "Jun 2022 - Present",
+        "isWork": true,
         "skills": [
-            "Programming Language",
-            "Networking",
-            "Human and Computer Interaction",
-            "Data Structure and Algorithm"
+            "Android Development",
+            "Clean Architecture",
+            "Java",
+            "Kotlin",
+            "Firebase",
+            "Jira"
         ],
         "tasks": [
-            "First Honour with CGPA 3.83 and Awarded with Honourable Mention in FYP Competition",
-            "The 8th Hong Kong University Student Innovation & Entrepreneurship Competition, Merit Prize in Information Technology"
+            "Develop and maintain Android Driver App by Version Control and Agile Methodology",
+            "Manage and handle the code refactoring based on different Software Design Patterns and Clean Architecture",
+            "Extend existing app with new features and prepared proofs-of-concept using the latest Android components and frontend frameworks"
         ]
     },
     {
@@ -73,6 +76,23 @@
         "tasks": [
             "Work as a Software Developer in a project team, with frontend UI design",
             "Design a website and a mobile tour guide tool for tourism usage"
+        ]
+    },
+    {
+        "key": "005",
+        "company": "City University of Hong Kong",
+        "position": "Major in Information Engineering",
+        "date": "Sep 2018 - Jun 2022",
+        "isWork": false,
+        "skills": [
+            "Programming Language",
+            "Networking",
+            "Human and Computer Interaction",
+            "Data Structure and Algorithm"
+        ],
+        "tasks": [
+            "First Honour with CGPA 3.83 and Awarded with Honourable Mention in FYP Competition",
+            "The 8th Hong Kong University Student Innovation & Entrepreneurship Competition, Merit Prize in Information Technology"
         ]
     }
 ]

@@ -6,7 +6,7 @@ export const projectData = [
             "Analysis text with summarization, classification, prediction",
             "Big Data Analysis with Social Media Exploration with easy visualization"
         ],
-        "link": "https://github.com/alan5543/Resume",
+        "link": "https://github.com/alan5543/FYP-Project",
         "DocLink": require("../documents/news_platform_document.pdf"),
         "haveCode": true,
         "haveDoc": true,
@@ -17,10 +17,10 @@ export const projectData = [
         "elements":[
             "A Personal Website keep updating my status and information"
         ],
-        "link": "https://github.com/alan5543/Resume",
-        "DocLink": "",
+        "link": "https://github.com/alan5543/alan-yang-profilio-app",
+        "DocLink": "https://alan5543.github.io/alan-yang-profilio-app/",
         "haveCode": true,
-        "haveDoc": false,
+        "haveDoc": true,
         "image": require("../images/profilo_app.png")
     },
     {
@@ -29,8 +29,8 @@ export const projectData = [
             "Create a sound calibration engine with Observer Pattern",
             "Design a click wheel User Interface for tone modification"
         ],
-        "link": "https://github.com/alan5543/Resume",
-        "DocLink": "",
+        "link": "",
+        "DocLink": "https://solosglasses.com/pages/solos-apps-solos-airgo",
         "haveCode": false,
         "haveDoc": true,
         "image": require("../images/EQ_Cal_App.png")
@@ -53,7 +53,7 @@ export const projectData = [
             "Building the CLI App with Python Click to simulate the real-life logistic operation.",
             "The project is about setting up the API for logistic tasks, Database Query, and Command Line Control"
         ],
-        "link": "https://github.com/alan5543/Resume",
+        "link": "https://github.com/alan5543/delivery_app",
         "DocLink": "",
         "haveCode": true,
         "haveDoc": false,
