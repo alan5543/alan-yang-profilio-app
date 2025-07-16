@@ -6,7 +6,7 @@ export const personalData = [
       "facebook": "https://www.linkedin.com/in/alan-yang-803977204",
       "instagram": "https://www.instagram.com/alan.yky",
       "linkedln": "https://www.linkedin.com/in/alan-yang-803977204",
-      "email": "alanyangkaiyam0604@gmail.com",
+      "email": "kai.y.yang@mail.mcgill.ca",
       "skills": [
         {
           "category": "Machine Learning",
