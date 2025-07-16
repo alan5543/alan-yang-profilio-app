@@ -1,22 +1,31 @@
-
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
 .WebSlider {
-  width: 50%;
-  padding: 0 0 0 25vw;
-  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  position: relative;
 }
 
-.sliderContainer{
-    height: 62vh;
-    padding: 0 0 0 0;
+.sliderContainer {
+  height: 550px;
+  /* Increased from 500px */
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+  /* Increased from 450px */
 }
 
 .slide {
-  transform: scale(0.5);
-  transition: transform 300ms;
-  opacity: 0.5;
+  transform: scale(0.95);
+  opacity: 0.7;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-width: 300px;
 }
 
 .activeSlide {
@@ -24,113 +33,132 @@
   opacity: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .arrow {
-  background-color: #fff;
+  background-color: #140c14;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
   z-index: 10;
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .arrow svg {
-  transition: color 300ms;
-  /* padding: 50vh 0 0 0; */
+  transition: color 0.3s ease;
+  color: #fff;
+  font-size: 2rem;
 }
 
-.arrow svg:hover {
+.arrow:hover svg {
   color: #68edff;
 }
 
 .next {
-    background-color: #140c14;
-    right: 0%;
-    top: 50%;
-    margin-left: 100px ;
+  right: 1rem;
 }
 
 .prev {
-    background-color: #140c14;
-    left: 0%;
-    top: 50%;
-    margin-right: 100px ;
+  left: 1rem;
 }
 
-.FaArrowRight{
-    background-color: #140c14;
-    color: #fff;
-    margin: 0;
-    font-size: 2rem;
-}
-
-.FaArrowLeft{
-    background-color: #140c14;
-    color: #fff;
-    font-size: 2rem;
+.FaArrowRight,
+.FaArrowLeft {
+  color: #fff;
+  font-size: 2rem;
 }
 
 .slick-slide {
-    height: 80vh;
-    padding: 5vh 0 0 0;
-    justify-content: center;
-    display: flex;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.slick-dots {
+  bottom: -2rem;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #68edff;
+  opacity: 0.75;
+}
+
+.no-projects {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 2000px) {
+  .WebSlider {
+    max-width: 1400px;
   }
 
-  @media screen and (min-width: 2000px) {
-
-    .slide {
-        transform: scale(0.8);
-        transition: transform 300ms;
-        opacity: 0.5;
-      }
-
-      .activeSlide {
-        transform: scale(1.1);
-        opacity: 1;
-        display: flex;
-        justify-content: center;
-      }
+  .sliderContainer {
+    height: 600px;
+    /* Increased from 550px */
   }
 
-  @media screen and (max-width: 1400px){
-    .WebSlider {
-        width: 100%;
-        height: 45rem;
-        padding: 0;
-      }
-
-    .sliderContainer{
-        height: 90%;
-        display: flex;
-        padding: 0;
-    }
-
-    .slide {
-        transform: scale(1);
-        transition: transform 300ms;
-        opacity: 1;
-      }
-
-      .activeSlide {
-        display: flex;
-        justify-content: center;
-        transform: scale(1);
-        opacity: 1;
-      }
-
-      .slick-dots li button:before {
-          color: white;
-      }
-
-      .slick-dots li.slick-active button:before {
-        opacity: 0.75;
-        color: #68edff;
-    }
-
-    .slick-slide {
-    height: 80vh;
-    padding: 0;
-    justify-content: center;
-    display: flex;
+  .slide {
+    transform: scale(0.95);
+    opacity: 0.7;
   }
+
+  .activeSlide {
+    transform: scale(1.1);
+    opacity: 1;
   }
+}
+
+@media screen and (max-width: 1400px) {
+  .WebSlider {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .sliderContainer {
+    height: 500px;
+    /* Increased from 450px */
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .sliderContainer {
+    height: 450px;
+    /* Increased from 400px */
+  }
+
+  .slide,
+  .activeSlide {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .sliderContainer {
+    height: 500px;
+    /* Increased from 450px */
+  }
+
+  .slide,
+  .activeSlide {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

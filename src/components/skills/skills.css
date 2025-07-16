@@ -1,187 +1,134 @@
-.cards{
+.skillContainer {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillstitle {
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+.skillstitleName {
+    color: #42A5F5;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.skillsSubtitleName {
+    color: #90A4AE;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
-    margin: 1rem 10rem;
+    margin: 1rem 2rem;
     padding: 0;
     list-style-type: none;
-
-}
-
-
-.card{
-    position: relative;
-    display: block;
-    height: 18rem;  
-    width: 18rem;
-    border-radius: calc(40px);
-    overflow: hidden;
-    text-decoration: none;
-    background-color: antiquewhite;
-}
-
-.skillstitle{
-    margin: 0%;
-    padding: 0 0 3rem 0;
-    text-align: center;
-}
-
-.skillstitleName{
-    color: #DCD427;
-    text-transform: uppercase;
-	font-size: 3.5rem;
-    margin: 0;
-}
-
-.skillsSubtitleName{
-    color: #969696;
-    margin-top: 0;
-    font-size: 1.5rem;
-}
-
-.cardImgContainer{
-    text-align: center;
     justify-content: center;
-}
-
-.cardImage{
-    width: 10rem;
-    height: auto;
-    text-align: center;
-}
-
-.cardListItem{
-    justify-content: center;
-    display: flex;
-}
-
-.cardContainer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;      
-    border-radius: calc(40px);    
-    background-color: #fff;      
-    transform: translateY(100%);
-    transition: .2s ease-in-out;
-}
-
-.card:hover .cardContainer {
-    transform: translateY(0);
-}
-
-.cardHeader{
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    border-radius: calc(40px) 0 0 0;    
-    background-color: #fff;
-    transform: translateY(-100%);
-    transition: .2s ease-in-out;
-}
-
-.cardShape{
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    bottom: 100%;
-    right: 0;      
-    z-index: 1;
-}
-
-.cardShape path{
-    fill: #fff;
-}
-
-.card:hover .cardHeader{
-    transform: translateY(0);
-}
-
-/* .cardHeaderText{
-
-} */
-
-.cardHeaderTitle{
-    font-size: 1rem;
-    margin: 0 0 0.3rem;
-    color: #6A515E;
-}
-
-.cardHeaderStatus{
-    font-size: 0.8rem;
-    color: #D7BDCA;
-}
-
-.cardContent{
-    text-align: center;
-    justify-content: center;
-}
-
-.cardContentElement{
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-}
-.skillContainer{
+    max-width: 1200px;
     width: 100%;
-	min-height: 100vh;
-	background-color: #140c14;
 }
 
+.cardListItem {
+    display: flex;
+    justify-content: center;
+}
 
-.cardContentDescription{
-    padding: 0 2rem 2rem;
-    margin: 0;
-    color: #D7BDCA;
-    font-family: "MockFlowFont";   
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 20rem;
+    background: #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, max-height 0.3s ease;
+    min-height: 8rem;
+    max-height: 20rem;
+}
+
+.card:hover {
+    max-height: 30rem;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cardImgContainer {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
     overflow: hidden;
 }
 
-@media screen and (max-width: 1000px){
-    .cards{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        gap: 2rem;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    
-    }
+.cardContent {
+    padding: 1.5rem;
+    background: #fff;
 }
 
-@media screen and (min-width: 1716px){
-    .cards{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        gap: 2rem;
-        margin: 1rem 20rem;
-        padding: 0;
-        list-style-type: none;
-    
-    }
+.cardHeader {
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 2045px){
-    .cards{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        gap: 2rem;
-        margin: 1rem 34rem;
-        padding: 0;
-        list-style-type: none;
-    
-    }
+.cardHeaderTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #6A515E;
+    margin: 0 0 0.5rem;
 }
 
-@media screen and (max-width: 500px) {
-    .skillstitleName{
-        color: #DCD427;
-        text-transform: uppercase;
+.cardHeaderStatus {
+    font-size: 1rem;
+    color: #957373;
+}
+
+.cardDetails {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.card:hover .cardDetails {
+    max-height: 12rem;
+    overflow-y: auto;
+}
+
+.cardContentElement {
+    margin: 0.5rem;
+    font-size: 0.9rem;
+    border-color: #6A515E;
+    color: #6A515E;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 640px) {
+    .skillstitleName {
         font-size: 2.5rem;
-        margin: 0;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 0 1rem;
     }
 }
+
+@media (min-width: 1024px) {
+    .cards {
+        gap: 2.5rem;
+        margin: 1rem 4rem;
+    } }

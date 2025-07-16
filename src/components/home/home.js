@@ -21,7 +21,7 @@ const Home = () => {
         <HomeBackground>
             <HomeVideo autoPlay loop muted src={Video} type='video/mp4' />
         </HomeBackground>
-        <Grow  in={true} timeout={2000} style={{ transformOrigin: '0 0 0' }}>
+        <Grow  in={true} timeout={4000} style={{ transformOrigin: '0 0 0' }}>
         <HomeContent>
             <HomeParagraph>
                 Hello My Name is
@@ -43,9 +43,25 @@ const Home = () => {
                       spy={true}
                       exact='true'
                       >
-                    <Button variant="contained" to="signup" onMouseEnter={onHover} onMouseLeave={onHover} size='large' color='primary'>
-                        Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-                    </Button>
+            <Button
+            variant="contained"
+            to="signup"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            size="large"
+            sx={{
+                // Text styling
+                fontSize: '1rem',
+                color: 'black', // Text color
+                textShadow: 'none',
+                // Smooth transition
+                transition: 'all 0.3s ease',
+                // Optional: Add slight shadow for depth
+                boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
+            }}
+            >
+            Know More About Me {hover ? <ArrowForward /> : <ArrowRight />}
+            </Button>
                 </Link>
             </HomeBtnWrapper>
         </HomeContent>

@@ -1,5 +1,8 @@
 .experienceContainer{
-    background-color: #140c14;
+    /* background-color: #140c14; */
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .experienceTitleContainer{
@@ -9,7 +12,7 @@
 }
 
 .experienceContainerTitleName{
-    color: #DCD427;
+    color: #42A5F5;
     text-transform: uppercase;
 	font-size: 3.5rem;
     margin: 0;
@@ -23,26 +26,19 @@
 
 
 .experienceItemTitle{
-    font-size: 1.5rem;
-    padding-bottom: 1vh;
+    font-size: 1.3rem;
 }
 
 .experienceItemSubtitle{
-    font-size: 1.2rem;
-    padding-bottom: 1vh;
+    font-size: 1rem;
     color: #676767;
 }
 
 .experienceItemContent{
     font-size: 1rem;
-    padding-bottom: 1vh;
+    padding-bottom: 0.5vh;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* .experienceItemSkills{
-
-}
- */
 
 
 @media screen and (min-width: 1600px) {
@@ -59,7 +55,6 @@
 @media screen and (max-width: 1600px) {
     .experienceContainer{
         background-color: #140c14;
-        padding: 8rem 0 0 0;
     }
 }
 
@@ -70,4 +65,14 @@
         font-size: 2.5rem;
         margin: 0;
     }
+}
+
+
+.timeline-date {
+    font-family: 'Your-Font-Name', sans-serif;
+    /* Change to your desired font */
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFF;
+    opacity: 0.9;
 }

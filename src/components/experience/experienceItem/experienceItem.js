@@ -16,13 +16,28 @@ export default function ExperienceItem({listData}) {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography style={{fontWeight: "bold"}}>Skills Involved</Typography>
+          <Typography
+            style={{ fontWeight: "bold" }
+            }>
+            Skills Involved
+          </Typography>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails
+          sx={{
+            padding: '8px 16px' // Reduced from default 16px 24px
+          }}
+        >
           <Typography>
               {listData.map((item) => {
                   return (
-                    <Chip key={item} className='cardContentElement' label={item} variant="outlined" color="info" sx={{'&:hover': {backgroundColor: "black",},}}/>
+                    <Chip
+                      key={item}
+                      className='cardContentElement'
+                      label={item}
+                      variant="contained"
+                      color="info"
+                      sx={{ '&:hover': { backgroundColor: "black", }, }}
+                    />
                   );
               })}
           </Typography>

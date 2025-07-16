@@ -41,10 +41,11 @@ const App = () => {
         <SideBar isMoblieTabOpen={isMoblieTabOpen} toggleMoblieTab={toggleMoblieTab} />
         <Home />
         <About />
-        <Skills />
-        <Experience/>
         <Project/>
+        <Experience/>
+        
         {/* <Contact/> */}
+        <Skills />
         <Footer/>
       </ThemeProvider>
     </div>

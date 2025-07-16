@@ -14,16 +14,16 @@ const SideBar = ( {isMoblieTabOpen, toggleMoblieTab} ) => {
                     Home
                 </SidebarLink>
                 <SidebarLink to="about" onClick={toggleMoblieTab}>
-                    About
-                </SidebarLink>
-                <SidebarLink to="personal" onClick={toggleMoblieTab}>
-                    Personal Skills
-                </SidebarLink>
-                <SidebarLink to="experience" onClick={toggleMoblieTab}>
-                    Experience
-                </SidebarLink>
-                <SidebarLink to="project" onClick={toggleMoblieTab}>
+                    About Me
+                  </SidebarLink>
+                  <SidebarLink to="project" onClick={toggleMoblieTab}>
                     Project Showcase
+                  </SidebarLink>
+                <SidebarLink to="experience" onClick={toggleMoblieTab}>
+                   My Pathway
+                </SidebarLink>
+                  <SidebarLink to="personal" onClick={toggleMoblieTab}>
+                    Professional Skills
                 </SidebarLink>
                 <SidebarLink onClick={toggleMoblieTab}>
                     Contact Me

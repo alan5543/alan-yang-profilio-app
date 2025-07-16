@@ -1,95 +1,121 @@
-import React, { useState } from 'react'
-import './webSlider.css'
-import Slider from "react-slick"
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa"
-import ProjectCard from '../projectItem/projectItem'
+import React, { useState, useMemo } from 'react';
+import './webSlider.css';
+import Slider from 'react-slick';
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import PropTypes from 'prop-types';
+import ProjectCard from '../projectItem/projectItem';
 
+const WebSlider = ({ cards }) => {
+  const [imageIndex, setImageIndex] = useState(0);
 
-const WebSlider = ({cards}) => {
+  const NextArrow = ({ onClick }) => (
+    <div
+      className="arrow next"
+      onClick={onClick}
+      role="button"
+      aria-label="Next slide"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === 'Enter' && onClick()}
+    >
+      <FaArrowRight className="FaArrowRight" />
+    </div>
+  );
 
-    const [imageIndex, setImageIndex] = useState(0)
+  const PrevArrow = ({ onClick }) => (
+    <div
+      className="arrow prev"
+      onClick={onClick}
+      role="button"
+      aria-label="Previous slide"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === 'Enter' && onClick()}
+    >
+      <FaArrowLeft className="FaArrowLeft" />
+    </div>
+  );
 
-    const NextArrow = ({onClick}) => {
-        return (
-            <div className="arrow next" onClick={onClick}>
-                <FaArrowRight className='FaArrowRight'/>
-            </div>
-        );
+  const settings = {
+    infinite: true,
+    speed: 500,
+    lazyLoad: 'ondemand',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    centerMode: true,
+    centerPadding: '0px',
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    beforeChange: (current, next) => setImageIndex(next),
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1170,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  };
+
+  const renderedCards = useMemo(() => {
+    if (!cards || !Array.isArray(cards) || cards.length === 0) {
+      return null;
     }
-
-    const PrevArrow = ({onClick}) => {
-        return (
-            <div className="arrow prev" onClick={onClick}>
-                <FaArrowLeft className='FaArrowLeft'/>
-            </div>
-        );
-    }
-
-
-    var settings = {
-        infinite: true,
-        speed: 300,
-        lazyLoad: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        initialSlide: 0,
-        centerMode: true,
-        centerPadding: 0,
-        nextArrow: <NextArrow/>,
-        prevArrow: <PrevArrow/>,
-        beforeChange: (current, next) => setImageIndex(next),
-        responsive: [
-          {
-            breakpoint: 1400,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              initialSlide: 1,
-              infinite: true,
-              arrows: false,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 1170,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 1,
-              infinite: true,
-              arrows: false,
-              dots: true
-            }
-          }
-          ,
-          {
-            breakpoint: 760,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              initialSlide: 1,
-              infinite: true,
-              arrows: false,
-              dots: true
-            }
-          }
-        ]
-      };
-
+    return cards.map((info, idx) => (
+      <div
+        className={idx === imageIndex ? 'slide activeSlide' : 'slide'}
+        key={info.id || idx}
+      >
+        <ProjectCard info={info} />
+      </div>
+    ));
+  }, [cards, imageIndex]);
 
   return (
-    <div className='WebSlider'>
-    <Slider {...settings} className='sliderContainer'>
-        {cards.map((info, idx) => {
-            return (
-                <div className={idx === imageIndex ? "slide activeSlide" : "slide"} key={imageIndex}>
-                    <ProjectCard info={info} />
-                </div>
-            );
-        })}
-    </Slider>
-  </div>
-  )
-}
+    <div className="WebSlider">
+      {renderedCards ? (
+        <Slider {...settings} className="sliderContainer">
+          {renderedCards}
+        </Slider>
+      ) : (
+        <div className="no-projects">No projects available</div>
+      )}
+    </div>
+  );
+};
 
-export default WebSlider
+WebSlider.propTypes = {
+  cards: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    })
+  ).isRequired,
+};
+
+export default WebSlider;

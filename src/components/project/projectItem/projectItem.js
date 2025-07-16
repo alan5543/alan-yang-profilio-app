@@ -5,45 +5,65 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import './projectItem.css'
+import './projectItem.css';
+import Popup from './Popup'; // Import the new Popup component
+import {useState} from 'react'
 
-export default function ProjectCard({info}) {
+export default function ProjectCard({ info }) {
+  const [openPopup, setOpenPopup] = useState(false);
 
-    const openSourceCode = () => {
-        window.open(info.link, "_blank");
+  const openProject = () => {
+    setOpenPopup(true);
+  };
+
+  const closePopup = () => {
+    setOpenPopup(false);
+  };
+
+  const openProjectCode = () => {
+    if (info.link) {
+      window.open(info.link, "_blank");
     }
-
-    const openLearnMore = () => {
-        if (!info.haveDoc){
-            alert("Not yet Update. Check it later.")
-        }
-        window.open(info.DocLink, "_blank");
-    }
+  };
 
   return (
     <Card className="projCardContainer">
       <CardMedia
         component="img"
-        height="300"
+        height="200"
         image={info.image}
         alt={info.title}
       />
-      <CardContent className='projCardContent'>
+      <CardContent className="projCardContent">
         <Typography gutterBottom variant="h5" component="div">
-            {info.title}
+          {info.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-            {info.elements.map((intro) => {
-                return (
-                    <li>{intro}</li>
-                );
-            })}
+          {info.brief && info.brief.map((intro, index) => (
+            <li key={index} style={{ marginBottom: '0.25rem' }}>{intro}</li>
+          ))}
         </Typography>
       </CardContent>
       <CardActions>
-          {info.haveCode ? <Button size="small" variant="contained" color="info" onClick={openSourceCode}>Source Code</Button> : null}
-          {info.haveDoc ? <Button size="small" variant="outlined" color="info" onClick={openLearnMore}>Learn More</Button> : null}
+        <Button
+          size="medium"
+          variant="contained"
+          color="info"
+          onClick={openProject}
+        >
+          Open Project
+        </Button>
+        <Button
+          size="small"
+          variant="outlined"
+          color="primary"
+          onClick={openProjectCode}
+          disabled={!info.link}
+        >
+          Project Code
+        </Button>
       </CardActions>
+      <Popup open={openPopup} handleClose={closePopup} info={info} />
     </Card>
   );
 }

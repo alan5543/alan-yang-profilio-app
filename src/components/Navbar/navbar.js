@@ -60,31 +60,7 @@ const Navbar = ({ toggleMoblieTab }) => {
                 exact="true"
                 offset={-90}
               >
-                About
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="personal"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-90}
-              >
-                Personal Skills
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="experience"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-90}
-              >
-                Experience
+                About Me
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -97,6 +73,30 @@ const Navbar = ({ toggleMoblieTab }) => {
                 offset={-90}
               >
                 Project Showcase
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="experience"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-90}
+              >
+                My Pathway
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="personal"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-90}
+              >
+                Professional Skills
               </NavLinks>
             </NavItem>
             <NavItem>

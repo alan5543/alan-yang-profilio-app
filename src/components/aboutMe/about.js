@@ -4,7 +4,7 @@ import Person from "../../images/person.jpg";
 import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { personalData } from '../../data/personal'
 import { Button } from "@mui/material";
-import Resume from "../../documents/ALAN_YANG_CV.pdf"
+import Resume from "../../documents/Alan_Yang_Resume.pdf"
 
 const About = () => {
 
@@ -17,7 +17,7 @@ const About = () => {
       <div className="container">
         <div className="content-section">
           <div className="title">
-            <h1 className="titleName">About Us</h1>
+            <h1 className="titleName">About Me</h1>
           </div>
           <div className="content">
             <h3>{personalData[0].brief}</h3>
