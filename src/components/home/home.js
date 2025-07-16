@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Video from '../../videos/homeVideo.mp4'
+import Video from '../../videos/homeVideo2.mp4'
 import { HomeContainer, HomeBackground, HomeVideo, HomeContent, HomeHeader, HomeParagraph, HomeBtnWrapper, ArrowForward, ArrowRight } from './homeComponents'
 import Typer from '../global/typer/typer'
 import { Grow, Button } from '@mui/material'
