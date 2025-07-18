@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alan-yang-profilio-app/static/css/main.ad53bf44.css",
-    "main.js": "/alan-yang-profilio-app/static/js/main.dfd87c28.js",
+    "main.js": "/alan-yang-profilio-app/static/js/main.095f9c95.js",
     "static/media/homeVideo2.mp4": "/alan-yang-profilio-app/static/media/homeVideo2.279af648ee23b7d3e7f0.mp4",
     "static/media/smart_retail_app.png": "/alan-yang-profilio-app/static/media/smart_retail_app.cf47aa62d861f1027734.png",
     "static/media/person.jpg": "/alan-yang-profilio-app/static/media/person.5d4f0c53b50f1287ef3e.jpg",
@@ -9,6 +9,7 @@
     "static/media/news_platform_document.pdf": "/alan-yang-profilio-app/static/media/news_platform_document.eb68aba04da14c210383.pdf",
     "static/media/tinyReview.png": "/alan-yang-profilio-app/static/media/tinyReview.3c9ddf108b823bbaca6e.png",
     "static/media/phi-2.png": "/alan-yang-profilio-app/static/media/phi-2.1b9a0712c0f834154c8c.png",
+    "static/media/phone_background.jpg": "/alan-yang-profilio-app/static/media/phone_background.cb206474db8ecf446f9a.jpg",
     "static/media/news_app.png": "/alan-yang-profilio-app/static/media/news_app.547ac80f14f0e27bb954.png",
     "static/media/logistic_app.jpg": "/alan-yang-profilio-app/static/media/logistic_app.c3c18301b2445cad0e52.jpg",
     "static/media/profilo_app.png": "/alan-yang-profilio-app/static/media/profilo_app.bf6f122b664278f9e669.png",
@@ -26,10 +27,10 @@
     "static/media/slick.woff": "/alan-yang-profilio-app/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/alan-yang-profilio-app/index.html",
     "main.ad53bf44.css.map": "/alan-yang-profilio-app/static/css/main.ad53bf44.css.map",
-    "main.dfd87c28.js.map": "/alan-yang-profilio-app/static/js/main.dfd87c28.js.map"
+    "main.095f9c95.js.map": "/alan-yang-profilio-app/static/js/main.095f9c95.js.map"
   },
   "entrypoints": [
     "static/css/main.ad53bf44.css",
-    "static/js/main.dfd87c28.js"
+    "static/js/main.095f9c95.js"
   ]
 }
