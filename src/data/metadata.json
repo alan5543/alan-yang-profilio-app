@@ -1,16 +1,58 @@
-[
-    {
-        "name": "Alan Yang",
-        "positions": [
-            "LLM Engineer",
-            "AI Engineer",
-            "Software Engineer",
-            "Frontend Developer",
-            "Backend Developer",
-            "UI Designer"
-        ],
-        "intro": "McGill Computer Science Master's grad driven to revolutionize daily life with innovative LLM and software solutions.",
-        "hashtag": "#keepExploring",
-        "about": "Know More About Me"
-    }
-]
+{
+  "en": {
+    "name": "Alan Yang",
+    "positions": [
+      "LLM Engineer",
+      "AI Engineer",
+      "Software Engineer",
+      "Frontend Developer",
+      "Backend Developer",
+      "UI Designer"
+    ],
+    "intro": "McGill Computer Science Master's grad driven to revolutionize daily life with innovative LLM and software solutions.",
+    "hashtag": "#keepExploring",
+    "about": "Know More About Me"
+  },
+  "fr": {
+    "name": "Alan Yang",
+    "positions": [
+      "Ingénieur LLM",
+      "Ingénieur IA",
+      "Ingénieur logiciel",
+      "Développeur frontend",
+      "Développeur backend",
+      "Concepteur d'interface utilisateur"
+    ],
+    "intro": "Diplômé d'une maîtrise en informatique de McGill, motivé à révolutionner la vie quotidienne avec des solutions LLM et logicielles innovantes.",
+    "hashtag": "#continuerÀExplorer",
+    "about": "En savoir plus sur moi"
+  },
+  "zh": {
+    "name": "Alan Yang",
+    "positions": [
+      "大语言模型工程师",
+      "人工智能工程师",
+      "软件工程师",
+      "前端开发者",
+      "后端开发者",
+      "用户界面设计师"
+    ],
+    "intro": "麦吉尔大学计算机科学硕士，致力于运用创新性大语言模型与前沿软件解决方案推动日常生活变革。",
+    "hashtag": "#持续探索",
+    "about": "了解我更多"
+  },
+  "hk": {
+    "name": "Alan Yang",
+    "positions": [
+      "大型語言模型工程師",
+      "人工智能工程師",
+      "軟件工程師",
+      "前端開發者",
+      "後端開發者",
+      "用戶界面設計師"
+    ],
+    "intro": "麥吉爾大學計算機科學碩士，致力於利用創新大型語言模型同前沿軟件解決方案，推動日常生活嘅變革。",
+    "hashtag": "#不斷探索",
+    "about": "了解我更多"
+  }
+}

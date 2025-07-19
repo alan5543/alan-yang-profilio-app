@@ -14,6 +14,8 @@ import { Slide } from '@mui/material';
 import { Box } from '@mui/material';
 import { keyframes } from '@mui/system';
 import Divider from '@mui/material/Divider';
+import { useTranslation } from 'react-i18next';
+
 
 
 // Custom fade-in scale animation
@@ -54,6 +56,8 @@ const StyledCard = styled(Card)(({ theme }) => ({
 }));
 
 const Popup = ({ open, handleClose, info }) => {
+  const { t } = useTranslation();
+
   return (
     <Dialog
       open={open}
@@ -96,7 +100,7 @@ const Popup = ({ open, handleClose, info }) => {
           {info.title}
         </Typography>
         <IconButton
-          aria-label="close"
+          aria-label={t('project.close')}
           onClick={handleClose}
           sx={{
             position: 'absolute',
@@ -188,7 +192,7 @@ const Popup = ({ open, handleClose, info }) => {
             height: '36px'
           }}
         >
-          Source Code
+          {t('project.sourceCode')}
         </Button>
       )}          
       {info.DocLink && (
@@ -220,7 +224,7 @@ const Popup = ({ open, handleClose, info }) => {
             height: '36px'
           }}
         >
-          Documentation
+          {t('project.documentation')}
         </Button>
       )}
       {info.YouTubeLink && (
@@ -248,7 +252,7 @@ const Popup = ({ open, handleClose, info }) => {
             height: '36px'
           }}
         >
-          YouTube
+          {t('project.youtube')}
         </Button>
       )}
       {info.TryAndPlayLink && (
@@ -277,7 +281,7 @@ const Popup = ({ open, handleClose, info }) => {
             height: '36px'
           }}
         >
-          Live Demo
+          {t('project.liveDemo')}
         </Button>
       )}
     </Box>
@@ -296,7 +300,7 @@ const Popup = ({ open, handleClose, info }) => {
             },
           }}
         >
-          Close
+          {t('project.close')}
         </Button>
       </DialogActions>
     </Dialog>

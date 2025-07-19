@@ -7,9 +7,12 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './projectItem.css';
 import Popup from './Popup'; // Import the new Popup component
-import {useState} from 'react'
+import { useState } from 'react'
+import { useTranslation } from 'react-i18next';
+
 
 export default function ProjectCard({ info }) {
+  const { t } = useTranslation();
   const [openPopup, setOpenPopup] = useState(false);
 
   const openProject = () => {
@@ -51,7 +54,7 @@ export default function ProjectCard({ info }) {
           color="info"
           onClick={openProject}
         >
-          Open Project
+          {t('project.openProject')}
         </Button>
         <Button
           size="small"
@@ -60,7 +63,7 @@ export default function ProjectCard({ info }) {
           onClick={openProjectCode}
           disabled={!info.link}
         >
-          Project Code
+          {t('project.projectCode')}
         </Button>
       </CardActions>
       <Popup open={openPopup} handleClose={closePopup} info={info} />

@@ -4,14 +4,22 @@ import 'react-vertical-timeline-component/style.min.css';
 import experienceData from '../../data/experience.json';
 import './experience.css';
 import ExperienceItem from './experienceItem/experienceItem';
-import { FaBriefcase as WorkIcon, FaGraduationCap as SchoolIcon } from 'react-icons/fa';
+import { FaBriefcase as WorkIcon, FaGraduationCap as SchoolIcon, FaLink } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
+import { IconButton } from '@mui/material';
+
 
 const Experience = () => {
+    const { t, i18n } = useTranslation();
+    
+    // Select experienceData based on current language, fallback to 'en'
+    const data = experienceData[i18n.language] || experienceData['en'];
+    
   return (
     <div className="experienceContainer" id="experience">
       <div className="experienceTitleContainer">
-        <h1 className="experienceContainerTitleName">My Pathway</h1>
-        <h1 className="experienceContainerSubtitleName">Explore my professional experience</h1>
+        <h1 className="experienceContainerTitleName">{t('experience.title')}</h1>
+        <h1 className="experienceContainerSubtitleName">{t('experience.subtitle')}</h1>
       </div>
 
       <div className="timelineContainer">
@@ -20,7 +28,7 @@ const Experience = () => {
             layout="2-columns" // Better for mobile
             animate={true} // Explicitly enable animations
         >
-            {experienceData.map((item) => {
+            {data.map((item) => {
             const isWork = item.isWork;
             const icon = isWork ? <WorkIcon /> : <SchoolIcon />;
             
@@ -47,8 +55,28 @@ const Experience = () => {
                 icon={icon}
                 className="experienceItemContainer"
                 >
-                <div className="experience-header">
-                    <h3 className="experienceItemTitle">{item.company.toUpperCase()}</h3>
+                    <div className="experience-header">
+                        <div className="experience-title-wrapper">
+                            <h3 className="experienceItemTitle">{item.company.toUpperCase()}</h3>
+                            {item.website && (
+                                <IconButton
+                                href={item.website}
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label={`Visit ${item.company} website`}
+                                sx={{
+                                    color: '#61b8ff',
+                                    '&:hover': {
+                                    color: '#42A5F5', // Match Skills.js chip hover
+                                    transform: 'scale(1.2)', // Scale up on hover
+                                    transition: 'all 0.3s ease',
+                                    },
+                                }}
+                                >
+                                <FaLink size={20} />
+                                </IconButton>
+                            )}
+                        </div>
                     <h4 className="experienceItemSubtitle">{item.position}</h4>
                 </div>
                 

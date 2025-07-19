@@ -10,8 +10,12 @@ import {
 } from "./navbarComponents";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll/modules";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+
 
 const Navbar = ({ toggleMoblieTab }) => {
+  const { t } = useTranslation();
   const [coloredNav, setColoredNav] = useState(false);
 
   const changeNavColor = () => {
@@ -24,6 +28,7 @@ const Navbar = ({ toggleMoblieTab }) => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeNavColor);
+    return () => window.removeEventListener("scroll", changeNavColor);
   }, []);
 
   const toggleHome = () => {
@@ -35,7 +40,9 @@ const Navbar = ({ toggleMoblieTab }) => {
       <Nav coloredNav={coloredNav}>
         <NavContainer>
           {/* Navbar Logo */}
-          <NavLogoContainer onClick={toggleHome}>Alan Yang</NavLogoContainer>
+          <NavLogoContainer onClick={toggleHome}>
+            Alan Yang
+          </NavLogoContainer>
 
           {/* Navbar Menu */}
           <NavMenu>
@@ -48,9 +55,10 @@ const Navbar = ({ toggleMoblieTab }) => {
                 exact="true"
                 offset={-90}
               >
-                Home
+                {t("nav.home")}
               </NavLinks>
             </NavItem>
+
             <NavItem>
               <NavLinks
                 to="about"
@@ -60,9 +68,10 @@ const Navbar = ({ toggleMoblieTab }) => {
                 exact="true"
                 offset={-90}
               >
-                About Me
+                {t("nav.about")}
               </NavLinks>
             </NavItem>
+
             <NavItem>
               <NavLinks
                 to="project"
@@ -72,9 +81,10 @@ const Navbar = ({ toggleMoblieTab }) => {
                 exact="true"
                 offset={-90}
               >
-                Project Showcase
+                {t("nav.project")}
               </NavLinks>
             </NavItem>
+
             <NavItem>
               <NavLinks
                 to="experience"
@@ -84,9 +94,10 @@ const Navbar = ({ toggleMoblieTab }) => {
                 exact="true"
                 offset={-90}
               >
-                My Pathway
+                {t("nav.experience")}
               </NavLinks>
             </NavItem>
+
             <NavItem>
               <NavLinks
                 to="personal"
@@ -96,9 +107,10 @@ const Navbar = ({ toggleMoblieTab }) => {
                 exact="true"
                 offset={-90}
               >
-                Professional Skills
+                {t("nav.skills")}
               </NavLinks>
             </NavItem>
+
             <NavItem>
               <NavLinks
                 to="footer"
@@ -108,9 +120,14 @@ const Navbar = ({ toggleMoblieTab }) => {
                 exact="true"
                 offset={-90}
               >
-                Contact Me
+                {t("nav.contact")}
               </NavLinks>
             </NavItem>
+
+            <NavItem>
+              <LanguageSwitcher />
+            </NavItem>
+            
           </NavMenu>
 
           {/* Mobile Phone Icon */}

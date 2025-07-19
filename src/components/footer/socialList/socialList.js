@@ -8,13 +8,20 @@ import {
 } from "react-icons/fa";
 import { personalData } from "../../../data/personal";
 import "./socialList.css";
+import { useTranslation } from 'react-i18next';
+
 
 const SocialList = () => {
+  const { t, i18n } = useTranslation();
+
+  // Select personalData based on current language, fallback to 'en'
+  const data = personalData[i18n.language] ? personalData[i18n.language][0] : personalData['en'][0];
+
   return (
     <div className="socialIconContainer">
       <a
         className="socialIcon"
-        href={`mailto:${personalData[0].email}?subject = Question to Alan Yang"`}
+        href={`mailto:${data.email}?subject = ${encodeURIComponent(t('footer.emailSubject'))}"`}
         target="_blank"
         rel="noreferrer"
       >
@@ -22,7 +29,7 @@ const SocialList = () => {
       </a>
       <a
         className="socialIcon"
-        href={personalData[0].facebook}
+        href={data.facebook}
         target="_blank"
         rel="noreferrer"
       >
@@ -30,7 +37,7 @@ const SocialList = () => {
       </a>
       <a
         className="socialIcon"
-        href={personalData[0].instagram}
+        href={data.instagram}
         target="_blank"
         rel="noreferrer"
       >
@@ -38,7 +45,7 @@ const SocialList = () => {
       </a>
       <a
         className="socialIcon"
-        href={personalData[0].youtube}
+        href={data.youtube}
         target="_blank"
         rel="noreferrer"
       >
@@ -46,7 +53,7 @@ const SocialList = () => {
       </a>
       <a
         className="socialIcon"
-        href={personalData[0].linkedln}
+        href={data.linkedln}
         target="_blank"
         rel="noreferrer"
       >

@@ -1,0 +1,38 @@
+.typer {
+    display: inline-block;
+    /* font-size: 2rem; */
+    font-weight: bold;
+    color: #fff;
+    /* Match HomeHeader styling */
+    font-family: 'Roboto', 'Noto Sans SC', sans-serif;
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* Smooth transition for hover */
+}
+
+.typer:hover {
+    transform: scale(1.1);
+    /* Slight scale-up on hover */
+    color: #42A5F5;
+    /* Accent color to match Skills.js chip */
+}
+
+.typed-cursor {
+    font-size: 2rem;
+    color: #fff;
+    animation: blink 0.7s infinite;
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* Smooth transition for hover */
+}
+
+.typed-cursor:hover {
+    transform: scale(1.1);
+    /* Slight scale-up on hover */
+    color: #42A5F5;
+    /* Match text hover color */
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

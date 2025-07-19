@@ -1,39 +1,63 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next';
 import Video from '../../videos/homeVideo2.mp4'
-import { HomeContainer, HomeBackground, HomeVideo, HomeContent, HomeHeader, HomeParagraph, HomeBtnWrapper, ArrowForward, ArrowRight } from './homeComponents'
+import Image from '../../images/phone_background.jpg'
+import { HomeContainer, HomeBackground, HomeVideo, HomeImage, HomeContent, HomeHeader, HomeParagraph, HomeBtnWrapper, ArrowForward, ArrowRight } from './homeComponents'
 import Typer from '../global/typer/typer'
 import { Grow, Button } from '@mui/material'
 import metadata from '../../data/metadata.json'
 import { Link } from 'react-scroll'
 
 const Home = () => {
-
+    const { t, i18n } = useTranslation();
     const [hover, setHover] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     const onHover = () => {
         setHover(!hover)
     }
 
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768); // You can adjust this breakpoint
+        };
+        
+        // Set initial value
+        handleResize();
+        
+        // Add event listener
+        window.addEventListener('resize', handleResize);
+        
+        // Clean up
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+  // Select metadata based on current language, fallback to 'en'
+  const meta = metadata[i18n.language] ? metadata[i18n.language] : metadata['en'];
 
   return (
     
     <HomeContainer id="home">
         <HomeBackground>
-            <HomeVideo autoPlay loop muted src={Video} type='video/mp4' />
+                {isMobile ? (
+                    <HomeImage src={Image} alt="Background" />
+                ) : (
+                    <HomeVideo autoPlay loop muted src={Video} type='video/mp4' />
+                )}
         </HomeBackground>
         <Grow  in={true} timeout={4000} style={{ transformOrigin: '0 0 0' }}>
         <HomeContent>
             <HomeParagraph>
-                Hello My Name is
+                {t('home.greeting')}
             </HomeParagraph>
             <HomeHeader>
-                {metadata[0].name}
+                {meta.name}
             </HomeHeader>
             <HomeHeader>
-                <Typer position={metadata[0].positions} />
+                 <Typer position={meta.positions} key={i18n.language} />
             </HomeHeader>
             <HomeParagraph>
-                {metadata[0].intro}
+                {meta.intro}
             </HomeParagraph>
 
             <HomeBtnWrapper>
@@ -60,7 +84,7 @@ const Home = () => {
                 boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
             }}
             >
-            Know More About Me {hover ? <ArrowForward /> : <ArrowRight />}
+            {t('home.button')} {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
                 </Link>
             </HomeBtnWrapper>

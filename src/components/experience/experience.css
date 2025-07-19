@@ -76,3 +76,10 @@
     color: #FFF;
     opacity: 0.9;
 }
+
+.experience-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Space between title and icon button */
+}

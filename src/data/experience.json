@@ -1,126 +1,506 @@
-[
+{
+  "en": [
     {
-        "key": "001",
-        "company": "McGill University",
-        "position": "Master of Computer Science (MSc)",
-        "date": "Aug 2023 - Feb 2025",
-        "website": "https://www.cs.mcgill.ca/",
-        "isWork": false,
-        "skills": [
-            "Large Language Model",
-            "Fine-Tuning of LLMs",
-            "Retrieval-augmented generation (RAG)",
-            "Prompt Engineering",
-            "MCP Development",
-            "Deep Learning Algorithm",
-            "AI Agent Development"
-        ],
-        "tasks": [  
-            "Conduct research on Large Language Models (LLMs), including fine-tuning, Retrieval-Augmented Generation (RAG), and prompt engineering techniques",  
-            "Investigate the potential of small language models (SLMs) and AI systems optimized for lower computational resources",  
-            "Develop AI agent architectures by integrating LLMs with software systems",  
-            "Maintained a 3.92/4.0 CGPA with demonstrated expertise in LLMs and machine learning"  
-        ]  
+      "key": "001",
+      "company": "McGill University",
+      "position": "Master of Computer Science (MSc)",
+      "date": "Aug 2023 - Feb 2025",
+      "website": "https://www.cs.mcgill.ca/",
+      "isWork": false,
+      "skills": [
+        "Large Language Model",
+        "Fine-Tuning of LLMs",
+        "Retrieval-augmented generation (RAG)",
+        "Prompt Engineering",
+        "MCP Development",
+        "Deep Learning Algorithm",
+        "AI Agent Development"
+      ],
+      "tasks": [
+        "Conduct research on Large Language Models (LLMs), including fine-tuning, Retrieval-Augmented Generation (RAG), and prompt engineering techniques",
+        "Investigate the potential of small language models (SLMs) and AI systems optimized for lower computational resources",
+        "Develop AI agent architectures by integrating LLMs with software systems",
+        "Maintained a 3.92/4.0 CGPA with demonstrated expertise in LLMs and machine learning"
+      ]
     },
     {
-        "key": "002",
-        "company": "Lalamove",
-        "position": "Software Engineer, Mobile",
-        "date": "Jun 2022 - Present",
-        "website": "https://www.lalamove.com",
-        "isWork": true,
-        "skills": [
-            "Android Development",
-            "Clean Architecture",
-            "Java",
-            "Kotlin",
-            "Firebase",
-            "Jira"
-        ],
-        "tasks": [
-            "Develop and maintain Android Driver App by Version Control and Agile Methodology",
-            "Manage and handle the code refactoring based on different Software Design Patterns and Clean Architecture",
-            "Extend existing app with new features and prepared proofs-of-concept using the latest Android components and frontend frameworks"
-        ]
+      "key": "002",
+      "company": "Lalamove",
+      "position": "Software Engineer, Mobile",
+      "date": "Jun 2022 - Present",
+      "website": "https://www.lalamove.com",
+      "isWork": true,
+      "skills": [
+        "Android Development",
+        "Clean Architecture",
+        "Java",
+        "Kotlin",
+        "Firebase",
+        "Jira"
+      ],
+      "tasks": [
+        "Develop and maintain Android Driver App by Version Control and Agile Methodology",
+        "Manage and handle the code refactoring based on different Software Design Patterns and Clean Architecture",
+        "Extend existing app with new features and prepared proofs-of-concept using the latest Android components and frontend frameworks"
+      ]
     },
     {
-        "key": "003",
-        "company": "Solos Technology Limited (Kopin Corporation)",
-        "position": "Full Stack Application Software Developer Trainee",
-        "date": "Sep 2021 – May 2022",
-        "website": "https://solosglasses.com/pages/solos-airgo-app-entry",
-        "isWork": true,
-        "skills": [
-            "Ionic Framework",
-            "Angular",
-            "Next.js",
-            "React.js",
-            "Node.js",
-            "MongoDB",
-            "Tensorflow",
-            "Android Studio"
-        ],
-        "tasks": [
-            "Design, develop and debug mobile apps with Ionic Framework and Android SDK for smart glasses",
-            "Develop an EQ Calibration App with music and voice equalizer for CES demo",
-            "Implement a full-stack web portal with backend API service from user upload to MongoDB",
-            "Design and execute the test cases for firmware and software"
-        ]
+      "key": "003",
+      "company": "Solos Technology Limited (Kopin Corporation)",
+      "position": "Full Stack Application Software Developer Trainee",
+      "date": "Sep 2021 – May 2022",
+      "website": "https://solosglasses.com/pages/solos-airgo-app-entry",
+      "isWork": true,
+      "skills": [
+        "Ionic Framework",
+        "Angular",
+        "Next.js",
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "Tensorflow",
+        "Android Studio"
+      ],
+      "tasks": [
+        "Design, develop and debug mobile apps with Ionic Framework and Android SDK for smart glasses",
+        "Develop an EQ Calibration App with music and voice equalizer for CES demo",
+        "Implement a full-stack web portal with backend API service from user upload to MongoDB",
+        "Design and execute the test cases for firmware and software"
+      ]
     },
     {
-        "key": "004",
-        "company": "Orient Overseas Container Line Limited",
-        "position": "Summer IT intern of Information Service Department",
-        "date": "May 2021 - Sep 2021",
-        "website": "https://www.oocl.com/eng/Pages/default.aspx",
-        "isWork": true,
-        "skills": [
-            "C#",
-            "Java",
-            "Vue.js",
-            "MSSQL",
-            "Vault by HashiCorp",
-            "Powershell Script"
-        ],
-        "tasks": [
-            "Working in Agile, handle a Dynamic Password Module project",
-            "Build a portal to cope with the management of database with the security standard",
-            "Develop a data comparator for EDI migration projects"
-        ]
+      "key": "004",
+      "company": "Orient Overseas Container Line Limited",
+      "position": "Summer IT intern of Information Service Department",
+      "date": "May 2021 - Sep 2021",
+      "website": "https://www.oocl.com/eng/Pages/default.aspx",
+      "isWork": true,
+      "skills": [
+        "C#",
+        "Java",
+        "Vue.js",
+        "MSSQL",
+        "Vault by HashiCorp",
+        "Powershell Script"
+      ],
+      "tasks": [
+        "Working in Agile, handle a Dynamic Password Module project",
+        "Build a portal to cope with the management of database with the security standard",
+        "Develop a data comparator for EDI migration projects"
+      ]
     },
     {
-        "key": "005",
-        "company": "Development Bureau (CEDD)",
-        "position": "Software Engineer Summer Intern",
-        "date": "Jun 2020 - Aug 2020",
-        "website": "https://ceddintern.wixsite.com/website-2",
-        "isWork": true,
-        "skills": [
-            "WordPress",
-            "REST API",
-            "Postman"
-        ],
-        "tasks": [
-            "Work as a Software Developer in a project team, with frontend UI design",
-            "Design a website and a mobile tour guide tool for tourism usage"
-        ]
+      "key": "005",
+      "company": "Development Bureau (CEDD)",
+      "position": "Software Engineer Summer Intern",
+      "date": "Jun 2020 - Aug 2020",
+      "website": "https://ceddintern.wixsite.com/website-2",
+      "isWork": true,
+      "skills": [
+        "WordPress",
+        "REST API",
+        "Postman"
+      ],
+      "tasks": [
+        "Work as a Software Developer in a project team, with frontend UI design",
+        "Design a website and a mobile tour guide tool for tourism usage"
+      ]
     },
     {
-        "key": "006",
-        "company": "City University of Hong Kong",
-        "position": "Major in Information Engineering",
-        "date": "Sep 2018 - Jun 2022",
-        "website": "https://www.ee.cityu.edu.hk/",
-        "isWork": false,
-        "skills": [
-            "Programming Language",
-            "Networking",
-            "Human and Computer Interaction",
-            "Data Structure and Algorithm"
-        ],
-        "tasks": [
-            "First Honour with CGPA 3.83 and Awarded with Honourable Mention in FYP Competition",
-            "The 8th Hong Kong University Student Innovation & Entrepreneurship Competition, Merit Prize in Information Technology"
-        ]
+      "key": "006",
+      "company": "City University of Hong Kong",
+      "position": "Major in Information Engineering",
+      "date": "Sep 2018 - Jun 2022",
+      "website": "https://www.ee.cityu.edu.hk/",
+      "isWork": false,
+      "skills": [
+        "Programming Language",
+        "Networking",
+        "Human and Computer Interaction",
+        "Data Structure and Algorithm"
+      ],
+      "tasks": [
+        "First Honour with CGPA 3.83 and Awarded with Honourable Mention in FYP Competition",
+        "The 8th Hong Kong University Student Innovation & Entrepreneurship Competition, Merit Prize in Information Technology"
+      ]
     }
-]
+  ],
+  "fr": [
+    {
+      "key": "001",
+      "company": "Université McGill",
+      "position": "Maîtrise en informatique (MSc)",
+      "date": "Août 2023 - Fév 2025",
+      "website": "https://www.cs.mcgill.ca/",
+      "isWork": false,
+      "skills": [
+        "Modèle de langage large",
+        "Ajustement fin des LLM",
+        "Génération augmentée par récupération (RAG)",
+        "Ingénierie de prompts",
+        "Développement MCP",
+        "Algorithme d'apprentissage profond",
+        "Développement d'agents IA"
+      ],
+      "tasks": [
+        "Mener des recherches sur les modèles de langage large (LLM), y compris l'ajustement fin, la génération augmentée par récupération (RAG) et les techniques d'ingénierie de prompts",
+        "Étudier le potentiel des petits modèles de langage (SLM) et des systèmes IA optimisés pour des ressources informatiques réduites",
+        "Développer des architectures d'agents IA en intégrant les LLM avec des systèmes logiciels",
+        "Maintenu une moyenne cumulative de 3,92/4,0 avec une expertise démontrée en LLM et apprentissage automatique"
+      ]
+    },
+    {
+      "key": "002",
+      "company": "Lalamove",
+      "position": "Ingénieur logiciel, Mobile",
+      "date": "Juin 2022 - Présent",
+      "website": "https://www.lalamove.com",
+      "isWork": true,
+      "skills": [
+        "Développement Android",
+        "Architecture propre",
+        "Java",
+        "Kotlin",
+        "Firebase",
+        "Jira"
+      ],
+      "tasks": [
+        "Développer et maintenir l'application Android pour chauffeurs avec contrôle de version et méthodologie Agile",
+        "Gérer et effectuer la refactorisation du code en fonction de différents modèles de conception logicielle et d'une architecture propre",
+        "Étendre l'application existante avec de nouvelles fonctionnalités et préparer des preuves de concept en utilisant les derniers composants Android et cadres frontend"
+      ]
+    },
+    {
+      "key": "003",
+      "company": "Solos Technology Limited (Kopin Corporation)",
+      "position": "Stagiaire en développement logiciel full-stack",
+      "date": "Sep 2021 – Mai 2022",
+      "website": "https://solosglasses.com/pages/solos-airgo-app-entry",
+      "isWork": true,
+      "skills": [
+        "Framework Ionic",
+        "Angular",
+        "Next.js",
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "Tensorflow",
+        "Android Studio"
+      ],
+      "tasks": [
+        "Concevoir, développer et déboguer des applications mobiles avec Ionic Framework et Android SDK pour lunettes intelligentes",
+        "Développer une application de calibration EQ avec égaliseur musical et vocal pour une démo CES",
+        "Mettre en œuvre un portail web full-stack avec un service API backend pour le téléchargement des utilisateurs vers MongoDB",
+        "Concevoir et exécuter des cas de test pour le micrologiciel et le logiciel"
+      ]
+    },
+    {
+      "key": "004",
+      "company": "Orient Overseas Container Line Limited",
+      "position": "Stagiaire IT d'été du département des services d'information",
+      "date": "Mai 2021 - Sep 2021",
+      "website": "https://www.oocl.com/eng/Pages/default.aspx",
+      "isWork": true,
+      "skills": [
+        "C#",
+        "Java",
+        "Vue.js",
+        "MSSQL",
+        "Vault par HashiCorp",
+        "Script Powershell"
+      ],
+      "tasks": [
+        "Travailler en mode Agile, gérer un projet de module de mot de passe dynamique",
+        "Construire un portail pour gérer la base de données avec les normes de sécurité",
+        "Développer un comparateur de données pour les projets de migration EDI"
+      ]
+    },
+    {
+      "key": "005",
+      "company": "Bureau du développement (CEDD)",
+      "position": "Stagiaire d'été en ingénierie logicielle",
+      "date": "Juin 2020 - Août 2020",
+      "website": "https://ceddintern.wixsite.com/website-2",
+      "isWork": true,
+      "skills": [
+        "WordPress",
+        "API REST",
+        "Postman"
+      ],
+      "tasks": [
+        "Travailler comme développeur logiciel dans une équipe de projet, avec conception d'interface utilisateur frontend",
+        "Concevoir un site web et un outil de guide touristique mobile pour un usage touristique"
+      ]
+    },
+    {
+      "key": "006",
+      "company": "Université de la ville de Hong Kong",
+      "position": "Majeure en ingénierie de l'information",
+      "date": "Sep 2018 - Juin 2022",
+      "website": "https://www.ee.cityu.edu.hk/",
+      "isWork": false,
+      "skills": [
+        "Langage de programmation",
+        "Réseautage",
+        "Interaction homme-machine",
+        "Structure de données et algorithmes"
+      ],
+      "tasks": [
+        "Mention très bien avec une moyenne cumulative de 3,83 et distinction honorable dans la compétition FYP",
+        "8e concours d'innovation et d'entrepreneuriat des étudiants universitaires de Hong Kong, prix de mérite en technologie de l'information"
+      ]
+    }
+  ],
+  "zh": [
+    {
+      "key": "001",
+      "company": "麦吉尔大学",
+      "position": "计算机科学硕士",
+      "date": "2023年8月 - 2025年2月",
+      "website": "https://www.cs.mcgill.ca/",
+      "isWork": false,
+      "skills": [
+        "大语言模型",
+        "LLM微调",
+        "检索增强生成（RAG）",
+        "提示工程",
+        "MCP开发",
+        "深度学习算法",
+        "AI代理开发"
+      ],
+      "tasks": [
+        "开展大语言模型（LLM）研究，包括微调、检索增强生成（RAG）和提示工程技术",
+        "研究小型语言模型（SLM）和优化低计算资源的AI系统的潜力",
+        "通过将LLM与软件系统集成，开发AI代理架构",
+        "保持3.92/4.0的累计平均成绩，展示了在LLM和机器学习方面的专业知识"
+      ]
+    },
+    {
+      "key": "002",
+      "company": "Lalamove",
+      "position": "移动端软件工程师",
+      "date": "2022年6月 - 至今",
+      "website": "https://www.lalamove.com",
+      "isWork": true,
+      "skills": [
+        "Android开发",
+        "清洁架构",
+        "Java",
+        "Kotlin",
+        "Firebase",
+        "Jira"
+      ],
+      "tasks": [
+        "通过版本控制和敏捷方法开发和维护Android司机应用程序",
+        "基于不同软件设计模式和清洁架构管理和处理代码重构",
+        "使用最新的Android组件和前端框架扩展现有应用程序，添加新功能并准备概念验证"
+      ]
+    },
+    {
+      "key": "003",
+      "company": "Solos科技公司（Kopin公司）",
+      "position": "全栈应用软件开发实习生",
+      "date": "2021年9月 – 2022年5月",
+      "website": "https://solosglasses.com/pages/solos-airgo-app-entry",
+      "isWork": true,
+      "skills": [
+        "Ionic框架",
+        "Angular",
+        "Next.js",
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "Tensorflow",
+        "Android Studio"
+      ],
+      "tasks": [
+        "使用Ionic框架和Android SDK为智能眼镜设计、开发和调试移动应用程序",
+        "为CES演示开发带音乐和语音均衡器的EQ校准应用程序",
+        "实现从用户上传到MongoDB的全栈Web门户及后端API服务",
+        "为固件和软件设计并执行测试用例"
+      ]
+    },
+    {
+      "key": "004",
+      "company": "东方海外货柜航运有限公司",
+      "position": "信息技术部门暑期实习生",
+      "date": "2021年5月 - 2021年9月",
+      "website": "https://www.oocl.com/eng/Pages/default.aspx",
+      "isWork": true,
+      "skills": [
+        "C#",
+        "Java",
+        "Vue.js",
+        "MSSQL",
+        "HashiCorp Vault",
+        "Powershell脚本"
+      ],
+      "tasks": [
+        "在敏捷环境中工作，处理动态密码模块项目",
+        "构建符合安全标准的数据库管理门户",
+        "为EDI迁移项目开发数据比较器"
+      ]
+    },
+    {
+      "key": "005",
+      "company": "发展局（土木工程拓展署）",
+      "position": "软件工程师暑期实习生",
+      "date": "2020年6月 - 2020年8月",
+      "website": "https://ceddintern.wixsite.com/website-2",
+      "isWork": true,
+      "skills": [
+        "WordPress",
+        "REST API",
+        "Postman"
+      ],
+      "tasks": [
+        "在项目团队中担任软件开发者，负责前端用户界面设计",
+        "为旅游用途设计网站和移动导游工具"
+      ]
+    },
+    {
+      "key": "006",
+      "company": "香港城市大学",
+      "position": "信息工程专业",
+      "date": "2018年9月 - 2022年6月",
+      "website": "https://www.ee.cityu.edu.hk/",
+      "isWork": false,
+      "skills": [
+        "编程语言",
+        "网络技术",
+        "人机交互",
+        "数据结构与算法"
+      ],
+      "tasks": [
+        "以3.83的累计平均成绩获得一等荣誉，并在FYP竞赛中获得荣誉提名",
+        "第八届香港大学生创新与创业大赛信息技术类优秀奖"
+      ]
+    }
+  ],
+  "hk": [
+    {
+      "key": "001",
+      "company": "麥吉爾大學",
+      "position": "計算機科學碩士",
+      "date": "2023年8月 - 2025年2月",
+      "website": "https://www.cs.mcgill.ca/",
+      "isWork": false,
+      "skills": [
+        "大型語言模型",
+        "LLM微調",
+        "檢索增強生成（RAG）",
+        "提示工程",
+        "MCP開發",
+        "深度學習算法",
+        "AI代理開發"
+      ],
+      "tasks": [
+        "開展大型語言模型（LLM）研究，包括微調、檢索增強生成（RAG）同提示工程技術",
+        "研究小型語言模型（SLM）同優化低計算資源嘅AI系統潛力",
+        "通過將LLM同軟件系統集成，開發AI Agent架構",
+        "保持3.92/4.0嘅累計平均成績，展示咗喺LLM同機器學習方面嘅專業知識"
+      ]
+    },
+    {
+      "key": "002",
+      "company": "Lalamove",
+      "position": "Android工程師",
+      "date": "2022年6月 - 至今",
+      "website": "https://www.lalamove.com",
+      "isWork": true,
+      "skills": [
+        "Android開發",
+        "Clean Architecture",
+        "Java",
+        "Kotlin",
+        "Firebase",
+        "Jira"
+      ],
+      "tasks": [
+        "通過版本控制同敏捷方法開發同維護Android司機應用程式",
+        "基於唔同軟件設計模式同清潔架構管理同處理代碼重構",
+        "使用最新Android組件同前端框架擴展現有應用程式，添加新功能並準備概念驗證"
+      ]
+    },
+    {
+      "key": "003",
+      "company": "Solos科技公司（Kopin）",
+      "position": "Full-Stack工程師",
+      "date": "2021年9月 - 2022年5月",
+      "website": "https://solosglasses.com/pages/solos-airgo-app-entry",
+      "isWork": true,
+      "skills": [
+        "Ionic框架",
+        "Angular",
+        "Next.js",
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "Tensorflow",
+        "Android Studio"
+      ],
+      "tasks": [
+        "使用Ionic框架同Android SDK為智能眼鏡設計、開發同調試流動應用程式",
+        "為CES演示開發帶音樂同語音均衡器嘅EQ校準應用程式",
+        "實現從用戶上傳到MongoDB嘅全棧Web門戶及後端API服務",
+        "為固件同軟件設計並執行測試用例"
+      ]
+    },
+    {
+      "key": "004",
+      "company": "東方海外貨櫃航運有限公司 (OOCL)",
+      "position": "IT部門暑期實習生",
+      "date": "2021年5月 - 2021年9月",
+      "website": "https://www.oocl.com/eng/Pages/default.aspx",
+      "isWork": true,
+      "skills": [
+        "C#",
+        "Java",
+        "Vue.js",
+        "MSSQL",
+        "HashiCorp Vault",
+        "Powershell腳本"
+      ],
+      "tasks": [
+        "喺敏捷環境中工作，處理動態密碼模組項目",
+        "構建符合安全標準嘅數據庫管理門戶",
+        "為EDI遷移項目開發數據比較器"
+      ]
+    },
+    {
+      "key": "005",
+      "company": "發展局（土木工程拓展署）",
+      "position": "Software Engineer實習生",
+      "date": "2020年6月 - 2020年8月",
+      "website": "https://ceddintern.wixsite.com/website-2",
+      "isWork": true,
+      "skills": [
+        "WordPress",
+        "REST API",
+        "Postman"
+      ],
+      "tasks": [
+        "喺項目團隊中擔任軟件開發者，負責前端用戶界面設計",
+        "為旅遊用途設計網站同流動導遊工具"
+      ]
+    },
+    {
+      "key": "006",
+      "company": "香港城市大學",
+      "position": "資訊工程學士",
+      "date": "2018年9月 - 2022年6月",
+      "website": "https://www.ee.cityu.edu.hk/",
+      "isWork": false,
+      "skills": [
+        "編程語言",
+        "網絡技術",
+        "人機交互",
+        "數據結構與算法"
+      ],
+      "tasks": [
+        "以3.83嘅累計平均成績獲得一等榮譽，並喺FYP競賽中獲得榮譽提名",
+        "第八屆香港大學生創新與創業大賽信息技術類優秀獎"
+      ]
+    }
+  ]
+}

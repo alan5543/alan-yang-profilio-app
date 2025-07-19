@@ -1,19 +1,78 @@
-[
+{
+  "en": [
     {
-        "degree": "Bachelor Degree",
-        "school": "City University of Hong Kong",
-        "start": "2018",
-        "end": "2022",
-        "title": "Bachelor in Electrical Engineering",
-        "major": "Major in Information Engineering",
-        "gpa": "3.77",
-        "honour": "First Class Honours",
-        "certification": [
-            "Awarded with Deans' List in 2019/20 Semester A",
-            "Awarded with Deans' List in 2019/20 Semester B",
-            "Awarded with Deans' List in 2020/21 Semester B ",
-            "HKSAR Government Scholarship on Outstanding Performance 2020/21",
-            "HK & Kowloon Electrical Appliances Merchants Association Ltd. Scholarship 2020/21"
-        ]
+      "degree": "Bachelor Degree",
+      "school": "City University of Hong Kong",
+      "start": "2018",
+      "end": "2022",
+      "title": "Bachelor in Electrical Engineering",
+      "major": "Major in Information Engineering",
+      "gpa": "3.77",
+      "honour": "First Class Honours",
+      "certification": [
+        "Awarded with Deans' List in 2019/20 Semester A",
+        "Awarded with Deans' List in 2019/20 Semester B",
+        "Awarded with Deans' List in 2020/21 Semester B",
+        "HKSAR Government Scholarship on Outstanding Performance 2020/21",
+        "HK & Kowloon Electrical Appliances Merchants Association Ltd. Scholarship 2020/21"
+      ]
     }
-]
+  ],
+  "fr": [
+    {
+      "degree": "Licence",
+      "school": "Université de la ville de Hong Kong",
+      "start": "2018",
+      "end": "2022",
+      "title": "Licence en génie électrique",
+      "major": "Majeure en ingénierie de l'information",
+      "gpa": "3.77",
+      "honour": "Mention très bien",
+      "certification": [
+        "Inscrit sur la liste du doyen pour le semestre A 2019/20",
+        "Inscrit sur la liste du doyen pour le semestre B 2019/20",
+        "Inscrit sur la liste du doyen pour le semestre B 2020/21",
+        "Bourse du gouvernement de la RASHK pour performance exceptionnelle 2020/21",
+        "Bourse de l'Association des marchands d'appareils électriques de Hong Kong et Kowloon 2020/21"
+      ]
+    }
+  ],
+  "zh": [
+    {
+      "degree": "学士学位",
+      "school": "香港城市大学",
+      "start": "2018",
+      "end": "2022",
+      "title": "电子工程学士",
+      "major": "信息工程专业",
+      "gpa": "3.77",
+      "honour": "一等荣誉",
+      "certification": [
+        "2019/20学年A学期获院长荣誉榜",
+        "2019/20学年B学期获院长荣誉榜",
+        "2020/21学年B学期获院长荣誉榜",
+        "2020/21香港特区政府优秀表现奖学金",
+        "2020/21香港及九龙电器商协会有限公司奖学金"
+      ]
+    }
+  ],
+  "hk": [
+    {
+      "degree": "學士學位",
+      "school": "香港城市大學",
+      "start": "2018",
+      "end": "2022",
+      "title": "電子工程學士",
+      "major": "信息工程專業",
+      "gpa": "3.77",
+      "honour": "一等榮譽",
+      "certification": [
+        "2019/20學年A學期獲院長榮譽榜",
+        "2019/20學年B學期獲院長榮譽榜",
+        "2020/21學年B學期獲院長榮譽榜",
+        "2020/21香港特別行政區政府優秀表現獎學金",
+        "2020/21香港及九龍電器商協會有限公司獎學金"
+      ]
+    }
+  ]
+}

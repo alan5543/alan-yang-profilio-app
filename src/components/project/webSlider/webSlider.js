@@ -4,8 +4,12 @@ import Slider from 'react-slick';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import ProjectCard from '../projectItem/projectItem';
+import { useTranslation } from 'react-i18next';
+
 
 const WebSlider = ({ cards }) => {
+  const { t } = useTranslation();
+
   const [imageIndex, setImageIndex] = useState(0);
 
   const NextArrow = ({ onClick }) => (
@@ -13,7 +17,7 @@ const WebSlider = ({ cards }) => {
       className="arrow next"
       onClick={onClick}
       role="button"
-      aria-label="Next slide"
+      aria-label={t('project.nextSlide')}
       tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && onClick()}
     >
@@ -26,7 +30,7 @@ const WebSlider = ({ cards }) => {
       className="arrow prev"
       onClick={onClick}
       role="button"
-      aria-label="Previous slide"
+      aria-label={t('project.prevSlide')}
       tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && onClick()}
     >

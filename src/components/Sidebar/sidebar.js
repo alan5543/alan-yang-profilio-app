@@ -1,9 +1,16 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 import { SidebarContainer, CloseIconContainer, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink } from './sidebarComponents'
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
-const SideBar = ( {isMoblieTabOpen, toggleMoblieTab} ) => {
+const SideBar = ({ isMoblieTabOpen, toggleMoblieTab }) => {
+  const { t } = useTranslation();
+
   return (
-    <SidebarContainer isMoblieTabOpen={isMoblieTabOpen} onClick={toggleMoblieTab}>
+    <SidebarContainer
+      isMoblieTabOpen={isMoblieTabOpen}
+      onClick={toggleMoblieTab}
+    >
         <CloseIconContainer onClick={toggleMoblieTab}>
             <CloseIcon />
         </CloseIconContainer>
@@ -11,24 +18,32 @@ const SideBar = ( {isMoblieTabOpen, toggleMoblieTab} ) => {
         <SidebarWrapper>
             <SidebarMenu>
                 <SidebarLink to="home" onClick={toggleMoblieTab}>
-                    Home
+                    {t("nav.home")}
                 </SidebarLink>
                 <SidebarLink to="about" onClick={toggleMoblieTab}>
-                    About Me
+                    {t("nav.about")}
                   </SidebarLink>
                   <SidebarLink to="project" onClick={toggleMoblieTab}>
-                    Project Showcase
+                    {t("nav.project")}
                   </SidebarLink>
                 <SidebarLink to="experience" onClick={toggleMoblieTab}>
-                   My Pathway
+                    {t("nav.experience")}
                 </SidebarLink>
                   <SidebarLink to="personal" onClick={toggleMoblieTab}>
-                    Professional Skills
+                    {t("nav.skills")}
                 </SidebarLink>
-                <SidebarLink onClick={toggleMoblieTab}>
-                    Contact Me
+                <SidebarLink to="footer" onClick={toggleMoblieTab}>
+                    {t("nav.contact")}
                 </SidebarLink>
-            </SidebarMenu>
+        </SidebarMenu>
+                    <div style={{ 
+              display: 'flex', 
+              justifyContent: 'center', 
+              width: '100%',
+              marginTop: '20px' // Optional spacing
+            }}>
+              <LanguageSwitcher />
+            </div>
         </SidebarWrapper>
     </SidebarContainer>
   )

@@ -5,9 +5,12 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { FaExpandAlt } from "react-icons/fa";
 import { Chip } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 
-export default function ExperienceItem({listData}) {
+export default function ExperienceItem({ listData }) {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Accordion>
@@ -19,7 +22,7 @@ export default function ExperienceItem({listData}) {
           <Typography
             style={{ fontWeight: "bold" }
             }>
-            Skills Involved
+            {t('experience.skills')}
           </Typography>
         </AccordionSummary>
         <AccordionDetails
