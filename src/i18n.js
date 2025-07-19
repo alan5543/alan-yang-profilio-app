@@ -200,7 +200,8 @@ i18n
     }
         },
     },
-    fallbackLng: 'en',
+    lng: 'en', // Explicitly set English as the default language
+    fallbackLng: 'en', // Fallback language if the selected language is unavailable
     interpolation: {
       escapeValue: false,
     },
