@@ -113,7 +113,7 @@ const Navbar = ({ toggleMoblieTab }) => {
 
             <NavItem>
               <NavLinks
-                to="footer"
+                to="contact"
                 smooth={true}
                 duration={500}
                 spy={true}

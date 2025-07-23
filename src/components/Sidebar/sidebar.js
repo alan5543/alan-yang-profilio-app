@@ -32,7 +32,7 @@ const SideBar = ({ isMoblieTabOpen, toggleMoblieTab }) => {
                   <SidebarLink to="personal" onClick={toggleMoblieTab}>
                     {t("nav.skills")}
                 </SidebarLink>
-                <SidebarLink to="footer" onClick={toggleMoblieTab}>
+                <SidebarLink to="contact" onClick={toggleMoblieTab}>
                     {t("nav.contact")}
                 </SidebarLink>
         </SidebarMenu>
