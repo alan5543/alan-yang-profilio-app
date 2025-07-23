@@ -26,7 +26,6 @@ const iconMap = {
   '项目管理技能': <FaProjectDiagram size={80} color="#FFF" />,
   '软技能': <FaUsers size={80} color="#FFF" />,
   '機器學習': <FaRobot size={80} color="#FFF" />,
-  '前端技能': <FaReact size={80} color="#FFF" />,
   '後端技能': <FaTerminal size={80} color="#FFF" />,
   '雲端與數據庫': <FaCloud size={80} color="#FFF" />,
   '項目管理技能': <FaProjectDiagram size={80} color="#FFF" />,

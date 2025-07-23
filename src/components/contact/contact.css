@@ -1,0 +1,150 @@
+.contactAppContainer {
+    width: 100%;
+    min-height: 50rem;
+    background-color: #140c14;
+    font-family: 'Roboto', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    position: relative;
+}
+
+.contactTitle {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.contactTitleName {
+    color: #DCD427;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 0;
+    font-family: 'Dancing Script', 'Roboto', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+    font-weight: 800;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.contactSubtitleName {
+    color: #969696;
+    margin-top: 0.5rem;
+    font-size: 1.75rem;
+    font-family: 'Roboto', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.contactMessage {
+    color: #969696;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.contactCard {
+    width: 70vw;
+    height: 70vh;
+    background: #1e1e1e;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.contactCard:hover {
+    transform: translateY(-5px);
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bookOpen {
+    0% {
+        opacity: 0;
+        transform: rotateX(90deg) scale(0.8);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: rotateX(15deg) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg) scale(1);
+    }
+}
+
+.animate-book-open {
+    animation: bookOpen 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pulse {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(97, 184, 255, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(97, 184, 255, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(97, 184, 255, 0);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contactTitleName {
+        font-size: 2.75rem;
+    }
+
+    .contactSubtitleName {
+        font-size: 1.25rem;
+    }
+
+    .contactCard {
+        padding: 1.5rem;
+        max-width: 90%;
+        min-height: 500px;
+    }
+
+    .contactMessage {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .contactCard {
+        max-width: 90%;
+        min-height: 500px;
+        padding: 1.5rem;
+    }
+
+    .contactMessage {
+        font-size: 1rem;
+    }
+}
+
+/* #140c14 */

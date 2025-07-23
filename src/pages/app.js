@@ -9,6 +9,7 @@ import Experience from '../components/experience/experience';
 import Project from '../components/project/project';
 import Footer from '../components/footer/footer';
 import "./app.css";
+import Contact from '../components/contact/contact';
 // import Contact from '../components/contactMe/contact';
 
 const theme = createTheme({
@@ -43,9 +44,8 @@ const App = () => {
         <About />
         <Project/>
         <Experience/>
-        
-        {/* <Contact/> */}
         <Skills />
+        <Contact />
         <Footer/>
       </ThemeProvider>
     </div>
