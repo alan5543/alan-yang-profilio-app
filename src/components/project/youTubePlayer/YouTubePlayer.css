@@ -1,0 +1,45 @@
+.youtube-player-container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 24px;
+    /* Match CardMedia marginBottom */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Full width of parent container */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Laptop screens (default: width set to 650px in YouTubePlayer.js) */
+@media (min-width: 601px) {
+    .youtube-player-container {
+        max-width: 650px;
+        /* Match the fixed width in opts for consistency */
+    }
+}
+
+/* Mobile screens (width: 100%) */
+@media (max-width: 600px) {
+    .youtube-player-container {
+        max-width: 100%;
+        /* Full width of parent container */
+    }
+}
+
+/* Error state styling */
+.youtube-player-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* Match mobile height for consistency */
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+    font-size: 1rem;
+}

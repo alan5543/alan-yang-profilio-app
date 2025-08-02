@@ -134,7 +134,7 @@ export const projectData = {
       ],
       link: "https://github.com/alan5543/Grocery-Share-API",
       DocLink: "https://github.com/alan5543/Grocery-Share-API",
-      YouTubeLink: "https://www.youtube.com/watch?v=wFBS9rF1FWI&ab_channel=KaiYamYang",
+      YouTubeLink: "https://www.youtube.com/watch?v=23S-vV6ZRFo&ab_channel=KaiYamYang",
       TryAndPlayLink: "",
       image: require("../images/grocery.jpg")
     },
@@ -397,8 +397,8 @@ export const projectData = {
         "Les mesures de sécurité incluent : le hachage des mots de passe avec bcrypt, les jetons de rafraîchissement JWT à courte expiration, et une validation stricte de la propriété pour tous les accès aux ressources. Le système a été testé sous charge pour gérer plus de 50 utilisateurs simultanés par groupe domestique, avec des optimisations de performance incluant le cache Redis pour les résumés fréquemment consultés et l'indexation de la base de données sur toutes les clés étrangères. Le projet complet - y compris la documentation de l'API, les guides de configuration et les données de test d'exemple - est disponible en tant que dépôt open-source pour encourager l'adoption et l'extension par la communauté."
       ],
       link: "https://github.com/alan5543/Grocery-Share-API",
-      DocLink: "https://github.com/alan5543/Grocery-Share-API",
-      YouTubeLink: "https://www.youtube.com/watch?v=wFBS9rF1FWI&ab_channel=KaiYamYang",
+      DocLink: "https://github.com/alan5543/Grocery-Share-App",
+      YouTubeLink: "https://youtu.be/23S-vV6ZRFo?si=6E9M8gyDbPDiMuU_",
       TryAndPlayLink: "",
       image: require("../images/grocery.jpg")
     },

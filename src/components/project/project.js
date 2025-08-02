@@ -4,7 +4,6 @@ import WebSlider from './webSlider/webSlider';
 import { projectData } from '../../data/project';
 import { useTranslation } from 'react-i18next';
 
-
 const Project = () => {
   const { t, i18n } = useTranslation();
 
