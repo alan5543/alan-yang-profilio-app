@@ -136,7 +136,8 @@ export const projectData = {
       DocLink: "https://github.com/alan5543/Grocery-Share-API",
       YouTubeLink: "https://www.youtube.com/watch?v=23S-vV6ZRFo&ab_channel=KaiYamYang",
       TryAndPlayLink: "",
-      image: require("../images/grocery.jpg")
+      image: require("../images/grocery.jpg"),
+      paragraph: "Grocery Room is an iOS solution for shared household expense management, featuring collaborative grocery lists with memos and automated receipt scanning using the Gemini API for OCR, with a confirmation workflow for item ownership. Built on a MERN stack with PostgreSQL and JSONB, it includes JWT authentication, real-time debt calculations, a responsive dashboard with graphs and history filtering, and security via bcrypt hashing and short-lived JWT tokens. It is available as an open-source project on GitHub."
     },
     {
       id: "8",
@@ -400,7 +401,8 @@ export const projectData = {
       DocLink: "https://github.com/alan5543/Grocery-Share-App",
       YouTubeLink: "https://youtu.be/23S-vV6ZRFo?si=6E9M8gyDbPDiMuU_",
       TryAndPlayLink: "",
-      image: require("../images/grocery.jpg")
+      image: require("../images/grocery.jpg"),
+      paragraph: "Détail en vedette : Grocery Room est une solution iOS pour la gestion des dépenses partagées des ménages, proposant des listes de courses collaboratives avec des mémos et une numérisation automatisée des reçus utilisant l'API Gemini pour l'OCR, avec un flux de confirmation pour la propriété des articles. Construit sur une pile MERN avec PostgreSQL et JSONB, il inclut une authentification JWT, des calculs de dettes en temps réel, un tableau de bord réactifNuevo System: bord avec des graphiques et un filtrage d'historique, ainsi qu'une sécurité via le hachage bcrypt et des jetons JWT à courte durée de vie. Il est disponible en tant que projet open-source sur GitHub."
     },
     {
       id: "8",
@@ -662,9 +664,10 @@ export const projectData = {
       ],
       link: "https://github.com/alan5543/Grocery-Share-API",
       DocLink: "https://github.com/alan5543/Grocery-Share-API",
-      YouTubeLink: "https://www.youtube.com/watch?v=wFBS9rF1FWI&ab_channel=KaiYamYang",
+      YouTubeLink: "https://www.youtube.com/watch?v=23S-vV6ZRFo&ab_channel=KaiYamYang",
       TryAndPlayLink: "",
-      image: require("../images/grocery.jpg")
+      image: require("../images/grocery.jpg"),
+      paragraph: "Grocery Room 是一款 iOS 解决方案，用于共享家庭费用管理，提供带有备忘录的协作购物清单，并使用 Gemini API 进行 OCR 的自动收据扫描，附有物品所有权确认流程。该应用基于 MERN 技术栈，搭配 PostgreSQL 和 JSONB，包含 JWT 身份验证、实时债务计算、带有图表和历史筛选的响应式仪表板，以及通过 bcrypt 散列和短寿命 JWT 令牌提供安全性。它作为开源项目在 GitHub 上提供。"
     },
     {
       id: "8",
@@ -926,9 +929,10 @@ export const projectData = {
     ],
     link: "https://github.com/alan5543/Grocery-Share-API",
     DocLink: "https://github.com/alan5543/Grocery-Share-API",
-    YouTubeLink: "https://www.youtube.com/watch?v=wFBS9rF1FWI&ab_channel=KaiYamYang",
+    YouTubeLink: "https://www.youtube.com/watch?v=23S-vV6ZRFo&ab_channel=KaiYamYang",
     TryAndPlayLink: "",
-    image: require("../images/grocery.jpg")
+    image: require("../images/grocery.jpg"),
+    paragraph: "Grocery Room 是一款 iOS 解決方案，用於共享家庭費用管理，提供帶有備忘錄的協作購物清單，並使用 Gemini API 進行 OCR 的自動收據掃描，附有物品所有權確認流程。該應用基於 MERN 技術棧，搭配 PostgreSQL 和 JSONB，包含 JWT 身份驗證、實時債務計算、帶有圖表和歷史篩選的響應式儀表板，以及通過 bcrypt 散列和短壽命 JWT 令牌提供安全性。它作為開源項目在 GitHub 上提供。"
   },
   {
     id: "8",

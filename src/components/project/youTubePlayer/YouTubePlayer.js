@@ -4,8 +4,8 @@ import './YouTubePlayer.css';
 
 const YouTubePlayer = ({ videoId, autoplay = false }) => {
   const [opts, setOpts] = useState({
-    height: '450',
-    width: '700',
+    height: '400',
+    width: '650',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: autoplay ? 1 : 0,

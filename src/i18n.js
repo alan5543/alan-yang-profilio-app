@@ -43,6 +43,7 @@ i18n
             youtube: 'YouTube',
             liveDemo: 'Live Demo',
             close: 'Close',
+            featuredTitle: 'Check My Latest Project',
           },
           skills: {
             title: 'Professional Skills',
@@ -112,6 +113,7 @@ i18n
             youtube: 'YouTube',
             liveDemo: 'Démo en direct',
             close: 'Fermer',
+            featuredTitle: 'Consultez mon dernier projet'
           },
           skills: {
             title: 'Compétences professionnelles',
@@ -181,6 +183,7 @@ i18n
             youtube: 'YouTube',
             liveDemo: '实时演示',
             close: '关闭',
+            featuredTitle: '查看我的最新项目'
           },
           skills: {
             title: '专业技能',
@@ -249,8 +252,9 @@ i18n
         "documentation": "文件資料",
         "youtube": "YouTube",
         "liveDemo": "實時展示",
-        "close": "關閉"
-      },
+        "close": "關閉",
+            "featuredTitle": '查看我的最新項目'
+          },
       "skills": {
         "title": "專業技能",
         "subtitle": "持續學習，追求卓越",
